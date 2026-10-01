@@ -5,7 +5,7 @@ const PORT = process.env.PORT || 3000;
 
 app.get("/", (req, res) => {
   res.json({
-    message: "Hello from Azure!",
+    message: "Hello from Azure! another test",
     environment: process.env.NODE_ENV || "development"
   });
 });

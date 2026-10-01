@@ -32,6 +32,6 @@ test('GET / returns hello message and environment', async () => {
 
   assert.equal(response.statusCode, 200);
   const parsed = JSON.parse(response.body);
-  assert.equal(parsed.message, 'Hello from Azure!');
+  assert.equal(parsed.message, 'Hello from Azure! another test');
   assert.equal(parsed.environment, 'development');
 });
